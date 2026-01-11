@@ -453,15 +453,25 @@ footer {
         }
     }
     }
-
+    .why_appYantra {
+    & .collapse_content_wrapper {
+        & .service-btn{
+            h4{
+                font-size: 20px;
+            }
+        }}}
+    .section_heading_text{
+        font-size: 35px;
+    }
     footer {
     .footer-wrapper {
 
         .footer_title {
-            font-size: 80px;
+            font-size: 35px;
         }
     }
-}}
+}
+}
     @media (min-width: 576px) {
     .container, .container-sm {
         max-width: 100%;
