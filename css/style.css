@@ -322,6 +322,7 @@ header {
             overflow: hidden;
             border-bottom: 1px solid var(--border-color);
             padding: 30px 0px;
+            margin-bottom: 15px;
         }
 
         .service-btn {
