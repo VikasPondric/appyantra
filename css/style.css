@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #000000;
+    --secondary: #365eff;
+    --dark-btn: #1A1A1A;
+    --border-color: #fff8f847;
+    --text-color: #BABABA;
+    --heading-color: #fff;
+    --button-radius: 10px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--heading-color);
+}
+
+header {
+    backdrop-filter: none;
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%);
+    width: 100%;
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .navbar-brand {
+        color: #fff;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        transition: all 0.4s ease;
+                 &:hover{
+                color: var(--text-color);
+            }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                transition: all 0.4s ease;
+                 &:hover{
+                color: var(--text-color);
+            }
+            }
+           
+        }
+    }
+}
+
+.wrapper {
+    padding: 0 40px;
+    border-left: 1px dashed var(--border-color);
+    border-right: 1px dashed var(--border-color);
+
+}
+
+.main_btn {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--dark-btn);
+    padding: 12px;
+    border-radius: var(--button-radius);
+}
+
+.blue_btn {
+    background-color: var(--secondary);
+    transition: all 0.2s;
+    &:hover {
+        transform: translateY(-2px);
+        background-color: #5073ff;
+    }
+}
+.dark_btn {
+    transition: all 0.2s;
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* HERO SECTION CSS START HERE */
+.hero_section {
+    padding: 200px 0 0;
+    position: relative;
+    /* overflow: hidden; */
+
+
+    .svg-glow {
+        position: absolute;
+        bottom: 0;
+        right: -311px;
+        width: 1618px;
+        height: 405px;
+        transform: rotate(-15deg);
+        filter: blur(100px);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .svg-glow svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero_content {
+        h1.main_heading {
+            font-size: 60px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            color: var(--text-color);
+        }
+    }
+
+}
+
+/* HERO SECTION CSS END HERE */
+
+/* INFNITE SLIDER CSS START */
+.infinite_slider_section {
+    padding: 80px 0 0;
+}
+
+.card_wrapper {
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .member_title {
+        color: #fff;
+    }
+
+    .card-para {
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+.card-slider {
+    width: 100%;
+    padding: 40px 0;
+    pointer-events: none;
+}
+
+.card-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.card-slider .swiper-slide {
+    width: 412px;
+    color: #fff;
+
+    margin-right: 24px;
+
+
+
+}
+
+.card_wrapper {
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 24px;
+    opacity: 1;
+}
+
+
+/* INFNITE SLIDER CSS END */
+
+/* HOW IT WORKS SECTION CSS START*/
+.process_section {
+    padding: 180px 0 100px;
+
+    .step_slider_wrapper {
+        margin-top: 50px;
+
+        .swiper {
+            padding-bottom: 70px;
+        }
+
+        /* Navigation container */
+        .simple-slider {
+            padding-bottom: 60px;
+        }
+
+        /* Both buttons */
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 44px;
+            height: 44px;
+            background: var(--secondary);
+            border-radius: 50%;
+            bottom: 10px;
+            top: auto;
+            color: #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, .4);
+        }
+
+        /* Position right bottom */
+        .swiper-button-next {
+            right: 10px;
+        }
+
+        .swiper-button-prev {
+            right: 64px;
+            left: auto;
+        }
+
+        /* Remove default arrow size */
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 16px;
+        }
+
+        .step_title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .step_card_heading {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .step_card_wrapper {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 24px;
+            border-radius: 24px;
+
+            p {
+                color: var(--text-color);
+            }
+        }
+    }
+}
+
+.section_title_text {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg,
+            var(--secondary, rgb(54, 94, 255)) 0%,
+            rgb(176, 192, 255) 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.section_heading_text {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.bold_para_text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+/* HOW IT WORKS SECTION END START*/
+
+
+/* WHY APPYANTRA CSS  START*/
+.why_appYantra {
+    .content_part {
+        .why_appYantra_section_title {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--secondary);
+        }
+    }
+
+    .collapse_content_wrapper {
+        margin-top: 50px;
+
+        .service-item {
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-color);
+            padding: 30px 0px;
+        }
+
+        .service-btn {
+            width: 100%;
+
+            background: transparent;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: left;
+            color: #fff;
+
+            h4 {
+                font-size: 32px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+
+        .service-btn:not(.collapsed) {
+            /* background:#0d6efd; */
+            color: white;
+        }
+
+        .service-body {
+            padding: 20px 0 0;
+            color: var(--text-color);
+        }
+
+
+        .image-box img {
+            width: 100%;
+            border-radius: 14px;
+            display: none;
+        }
+
+        .image-box img.active {
+            display: block;
+        }
+    }
+}
+
+/* WHY APPYANTRA CSS  END*/
+
+/* TESTIMONAIL CSS START HERE */
+.testimonial_section {
+    padding: 120px 0 70px;
+
+    .content_part {
+        p {
+            font-size: 18px;
+            color: var(--text-color);
+        }
+    }
+}
+
+/* TESTIMONAIL CSS END HERE */
+
+/* FOOTER CSS START HERE */
+footer {
+    .footer-wrapper {
+        margin: 100px 0 0;
+        padding: 0px 40px 0;
+        border-left: 1px dashed var(--border-color);
+        border-right: 1px dashed var(--border-color);
+
+        .footer_para {
+            font-size: 18px;
+            color: var(--text-color);
+        }
+
+        .footer_title {
+            font-size: 112px;
+            font-weight: 600;
+            transition: all 0.4s ease;
+                &:hover{
+                    color: var(--text-color);
+                }
+        }
+
+        .footer_links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: end;
+
+            a {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: none;
+                transition: all 0.4s ease;
+                &:hover{
+                    color: var(--text-color);
+                }
+            }
+        }
+
+        .copyright_title {
+            color: var(--text-color);
+        }
+    }
+
+}
+
+/* FOOTER CSS END HERE */
+
+.glow-effect {
+    opacity: 0;
+    animation: glowFade 1.4s ease-out forwards;
+}
+
+@keyframes glowFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px) rotate(7deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(7deg);
+    }
+}
+
+
+    @media (max-width: 767px) {
+        .hero_section{
+
+        
+        .hero_content {
+        h1.main_heading {
+            font-size: 40px;
+        }
+    }
+    }
+
+    footer {
+    .footer-wrapper {
+
+        .footer_title {
+            font-size: 80px;
+        }
+    }
+}}
+    @media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px !important;
+    }
+}
