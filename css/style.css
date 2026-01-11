@@ -442,11 +442,11 @@ footer {
 
     @media (max-width: 767px) {
         .hero_section{
-
+            padding: 150px 0 0;
         
         .hero_content {
         h1.main_heading {
-            font-size: 40px;
+            font-size: 38px;
         }
     }
     }
