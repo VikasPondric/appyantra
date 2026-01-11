@@ -453,6 +453,9 @@ footer {
         }
     }
     }
+    .process_section{
+        padding: 80px 0 100px;
+    }
     .why_appYantra {
     & .collapse_content_wrapper {
         & .service-btn{
