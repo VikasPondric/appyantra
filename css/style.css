@@ -49,9 +49,11 @@ header {
     .container {
         padding: 0 40px;
     }
-.modal-backdrop{
-    z-index: -1;
-}
+
+    .modal-backdrop {
+        z-index: -1;
+    }
+
     .navbar-brand {
         color: #fff;
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -137,19 +139,16 @@ header {
         width: 100%;
         height: 100%;
     }
+}
 
-    .hero_content {
-        h1.main_heading {
-            font-size: 60px;
-            font-weight: 600;
-        }
+h1.main_heading {
+    font-size: 60px;
+    font-weight: 600;
+}
 
-        p {
-            font-size: 18px;
-            color: var(--text-color);
-        }
-    }
-
+p.main_para {
+    font-size: 18px;
+    color: var(--text-color);
 }
 
 /* HERO SECTION CSS END HERE */
@@ -381,6 +380,50 @@ header {
 
 /* TESTIMONAIL CSS END HERE */
 
+/* CONTACT US PAGE CSS START HERE */
+.contact_us {
+    padding: 200px 0 0;
+
+    .contact_content {
+        position: sticky;
+        top: 100px;
+
+        .social_links {
+            h4 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            a {
+                font-size: 14px;
+                font-weight: 600;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .contact_form{
+        .form-label{
+            font-size: 16px;
+            color: var(--text-color);
+        }
+        .form-control{
+            background-color: transparent;
+            border-color: var(--border-color);
+            &:focus{
+                box-shadow: none;
+            }
+            &::placeholder{
+                font-size: 13px;
+                color: var(--border-color);
+            }
+        }
+    }
+}
+
+/* CONTACT US PAGE CSS END HERE */
+
+
 /* FOOTER CSS START HERE */
 footer {
     .footer-wrapper {
@@ -458,69 +501,70 @@ footer {
     header {
         .container {
             padding: 0 20px;
-        }}
+        }
+    }
 
-        .hero_section {
-            padding: 150px 0 0;
+    .hero_section {
+        padding: 150px 0 0;
 
-            .hero_content {
-                h1.main_heading {
-                    font-size: 38px;
-                }
+        .hero_content {
+            h1.main_heading {
+                font-size: 38px;
             }
         }
+    }
 
-        .process_section {
-            padding: 80px 0 100px;
-        }
+    .process_section {
+        padding: 80px 0 100px;
+    }
 
-        .why_appYantra {
-            & .collapse_content_wrapper {
-                & .service-btn {
-                    h4 {
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-
-        .section_heading_text {
-            font-size: 35px;
-        }
-
-        footer {
-            .footer-wrapper {
-
-                .footer_title {
-                    font-size: 35px;
+    .why_appYantra {
+        & .collapse_content_wrapper {
+            & .service-btn {
+                h4 {
+                    font-size: 20px;
                 }
             }
         }
     }
 
-    @media (min-width: 576px) {
-
-        .container,
-        .container-sm {
-            max-width: 100%;
-        }
+    .section_heading_text {
+        font-size: 35px;
     }
 
-    @media (min-width: 768px) {
+    footer {
+        .footer-wrapper {
 
-        .container,
-        .container-md,
-        .container-sm {
-            max-width: 100%;
+            .footer_title {
+                font-size: 35px;
+            }
         }
     }
+}
 
-    @media (min-width: 1200px) {
+@media (min-width: 576px) {
 
-        .container,
-        .container-lg,
-        .container-xl,
-        .container-xxl {
-            max-width: 1200px !important;
-        }
+    .container,
+    .container-sm {
+        max-width: 100%;
     }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px !important;
+    }
+}
