@@ -386,7 +386,7 @@ p.main_para {
 
     .contact_content {
         position: sticky;
-        top: 100px;
+        top: 200px;
 
         .social_links {
             h4 {
@@ -423,6 +423,49 @@ p.main_para {
 
 /* CONTACT US PAGE CSS END HERE */
 
+/* FAQ PAGE CSS START HERE */
+.faq_section{
+      padding: 200px 0 0;
+      .faq_wrapper{
+        .accordion {
+            color: #fff;
+            --bs-accordion-bg: transparent;
+            --bs-accordion-border-color: var(--border-color);
+        }
+        .accordion-button{
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .accordion-item {
+            color: #fff;
+        }
+        .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+        .accordion-button:not(.collapsed){
+            background-color: transparent;
+        }
+      }
+}
+/* FAQ PAGE CSS END HERE */
+
+/* TERMS PAGE CSS START HERE */
+.terms{
+    padding: 200px 0 0;
+    .terms_content{
+        p, li, a{
+            font-size: 18px;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    }
+}
+/* TERMS PAGE CSS START HERE */
 
 /* FOOTER CSS START HERE */
 footer {
@@ -532,6 +575,9 @@ footer {
         font-size: 35px;
     }
 
+    .contact_us,.terms,.faq_section{
+        padding: 150px 0 0;
+    }
     footer {
         .footer-wrapper {
 
